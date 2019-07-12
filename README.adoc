@@ -18,7 +18,7 @@ docker run -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 -p 5775:5775/udp -p 6831:6831/udp 
 
 http://localhost:16686/search
 
-== JWT
+== JWT Security
 
 === Public Key
 
@@ -34,6 +34,12 @@ AX2o1GCG3xwOjkc4x0W7ezbQZdC9iftPxVHR8irOijJRRjcPDtA6vPKpzLl6CyYn
 sIYPd99ltwxTHjr3npfv/3Lw50bAkbT4HeLFxTx4flEoZLKO/g0bAoV2uqBhkA9x
 nQIDAQAB
 -----END PUBLIC KEY-----
+```
+
+=== Call Name Service
+
+```
+curl -H "Authorization: Bearer [token]" http://localhost:8200/name
 ```
 
 === Propagate Bearer Token
