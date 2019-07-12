@@ -9,7 +9,7 @@ import javax.ws.rs.core.MediaType;
 public class NameResource {
 
     @GET
-    @Path("/name")
+    @Path("name")
     @Produces(MediaType.APPLICATION_JSON)
     public Name name() {
         return new Name("Nobody");

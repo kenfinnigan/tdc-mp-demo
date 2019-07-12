@@ -9,10 +9,10 @@ import javax.ws.rs.core.MediaType;
 public class GreetingResource {
 
     @GET
-    @Path("/greeting")
+    @Path("greeting")
     @Produces(MediaType.APPLICATION_JSON)
     public Greeting greeting() {
-        return new Greeting("Hello World!");
+        return new Greeting("Hello World");
     }
 
     public class Greeting {
