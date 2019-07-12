@@ -36,6 +36,12 @@ nQIDAQAB
 -----END PUBLIC KEY-----
 ```
 
+Properties:
+```
+mp.jwt.verify.publickey.location=publicKey.pem
+mp.jwt.verify.issuer=https://quarkus.io/using-jwt-rbac
+```
+
 === Call Name Service
 
 ```
